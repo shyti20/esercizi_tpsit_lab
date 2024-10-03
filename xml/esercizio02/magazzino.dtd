@@ -1,0 +1,11 @@
+<!ELEMENT magazzino (scaffale+)>
+<!ELEMENT scaffale (prodotto+)>
+<!ELEMENT prodotto (nome, prezzo_unitario, quantita, ultimo_ordine)>
+
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT prezzo_unitario (#PCDATA)>
+<!ELEMENT quantita (#PCDATA)>
+<!ELEMENT ultimo_ordine (#PCDATA)>
+
+<!ATTLIST scaffale id_scaffale ID #REQUIRED>
+<!ATTLIST prodotto id_prodotto ID #REQUIRED>

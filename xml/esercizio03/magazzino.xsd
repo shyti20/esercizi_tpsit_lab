@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.mysite.com"
+    xmlns="https://www.mysite.com"
+    elementFormDefault="qualified">
+
+    <xs:element name="magazzino">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="scaffale" type="xs:string"/>
+                    <xs:sequence>
+                        <xs:element name="prodotto" type="xs:string">
+                            <xs:sequence>
+                                <xs:element name="nome"> 
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="Acciao" />
+                                            <xs:enumeration value="Ferro" />
+                                            <xs:enumeration value="Pane" />
+                                            <xs:enumeration value="Pomodori" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                                   
+                                <xs:element name="prezzo_unitario">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:decimal">
+                                            <xs:minExclusive value="0" />
+                                            <xs:maxExclusive value="1000000000000000000000000000000000000"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+
+                                <xs:element name="quantita"> 
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:integer">
+                                            <xs:maxInclusive value="0" />
+                                            <xs:minInclusive vlaue="1000" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+
+                                
+                                <xs:element name="ultimo_ordine" type="xs:date"/>
+                            </xs:sequence>
+                        </xs:element>
+                        </xs:sequence>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

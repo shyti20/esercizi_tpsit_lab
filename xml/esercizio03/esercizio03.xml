@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magazzino
+    xmlns="https://www.esercizio03.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:SchemaLocation="https://www.esercizio03.com magazzino.xsd">
+
+        <scaffale id_scaffale="s1312">
+            <prodotto id_prodotto="p3231">
+                <nome>Acciaio</nome>
+                <prezzo_unitario>2.99</prezzo_unitario>
+                <quantita>100</quantita>
+                <ultimo_ordine>10/03/2024</ultimo_ordine>
+            </prodotto>
+            <prodotto id_prodotto="p7463">
+                <nome> Ferro </nome>
+                <prezzo_unitario>1.99</prezzo_unitario>
+                <quantita>1000</quantita>
+                <ultimo_ordine>31/10/2022</ultimo_ordine>
+            </prodotto>
+        </scaffale>
+        <scaffale id_scaffale="s3234">
+            <prodotto id_prodotto="p4738">
+                <nome> Pane </nome>
+                <prezzo_unitario>1.00</prezzo_unitario>
+                <quantita>200</quantita>
+                <ultimo_ordine>12/11/2006</ultimo_ordine>
+            </prodotto>
+            <prodotto id_prodotto="p3778">
+                <nome>Pomodori</nome>
+                <prezzo_unitario>10.00</prezzo_unitario>
+                <quantita>10</quantita>
+                <ultimo_ordine>30/10/2006</ultimo_ordine>
+            </prodotto>
+        </scaffale>
+</magazzino>
